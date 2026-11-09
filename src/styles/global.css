@@ -1,0 +1,1005 @@
+
+/* ==========================================
+   DELTA POSITIVO - IDENTIDADE VISUAL
+========================================== */
+
+:root {
+  --dp-navy: #10243D;
+  --dp-blue: #1769AA;
+  --dp-light-blue: #DCEBFA;
+  --dp-light-gray: #F5F7FA;
+
+  --sl-color-accent-low: #DCEBFA;
+  --sl-color-accent: #1769AA;
+  --sl-color-accent-high: #10243D;
+
+  --sl-nav-height: 5.5rem;
+  --sl-color-bg-nav: #FFFFFF;
+  --sl-color-bg: #FFFFFF;
+  --sl-color-bg-sidebar: #FFFFFF;
+}
+
+:root[data-theme='dark'] {
+  --sl-color-accent-low: #10243D;
+  --sl-color-accent: #6BADE0;
+  --sl-color-accent-high: #DCEBFA;
+}
+
+/* ==========================================
+   CABEÇALHO
+========================================== */
+
+header.header {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #E5EAF0;
+}
+
+.site-title {
+  display: flex;
+  align-items: center;
+}
+
+.site-title img {
+  height: 4rem;
+  width: auto;
+  max-width: 16rem;
+  object-fit: contain;
+}
+
+/* ==========================================
+   PÁGINA INICIAL
+========================================== */
+
+body:has(.dp-home) h1#_top {
+  display: none !important;
+}
+
+.dp-home {
+  width: 100%;
+  color: var(--dp-navy);
+}
+
+/* ==========================================
+   BANNER PRINCIPAL
+========================================== */
+
+.dp-hero {
+  width: 100vw;
+  min-height: 430px;
+  margin-top: -80px;
+  margin-left: calc(50% - 50vw);
+  padding: 4rem 7%;
+  display: flex;
+  align-items: center;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,0.72) 0%,
+      rgba(255,255,255,0.55) 30%,
+      rgba(255,255,255,0.08) 60%,
+      rgba(255,255,255,0.00) 100%
+    ),
+    url('/images/delta-positivo-banner-aviao2.png');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-bottom: 5px solid var(--dp-blue);
+  box-sizing: border-box;
+}
+
+.dp-hero-content {
+  width: 100%;
+  max-width: 620px;
+}
+
+.dp-hero h1 {
+  color: var(--dp-navy);
+  font-size: clamp(2.8rem, 5vw, 4.4rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 0 0 1.2rem;
+}
+
+.dp-hero-content > p {
+  color: var(--dp-navy);
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  line-height: 1.5;
+  margin-bottom: 1.8rem;
+}
+
+.dp-hero-content strong {
+  color: var(--dp-blue);
+  font-style: italic;
+}
+
+/* ==========================================
+   BOTÕES DO BANNER
+========================================== */
+
+.dp-hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.dp-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  padding: 0.85rem 1.5rem;
+  border-radius: 2rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.dp-button-primary {
+  background-color: var(--dp-blue);
+  color: #FFFFFF !important;
+  border: 2px solid var(--dp-blue);
+}
+
+.dp-button-primary:hover {
+  background-color: var(--dp-navy);
+  border-color: var(--dp-navy);
+  transform: translateY(-2px);
+}
+
+.dp-button-secondary {
+  background-color: rgba(255,255,255,0.8);
+  color: var(--dp-navy) !important;
+  border: 2px solid var(--dp-navy);
+}
+
+.dp-button-secondary:hover {
+  background-color: var(--dp-light-blue);
+  transform: translateY(-2px);
+}
+
+/* ==========================================
+   SEÇÃO DE ÁREAS
+========================================== */
+
+.dp-section {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.dp-section h2,
+.dp-about h2 {
+  color: var(--dp-navy);
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 0.6rem;
+}
+
+.dp-section > p {
+  color: #526174;
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+}
+
+/* ==========================================
+   CARTÕES DAS ÁREAS
+========================================== */
+
+.dp-area-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 24px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 36px auto 0;
+  box-sizing: border-box;
+}
+
+.dp-area-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 230px;
+  padding: 1.6rem;
+
+  background: linear-gradient(145deg, #10243D, #193B5D);
+  border: 1px solid #294E70;
+  border-radius: 16px;
+
+  text-decoration: none !important;
+  box-shadow: 0 4px 14px rgba(16,36,61,0.12);
+  transition: 0.2s ease;
+}
+
+a.dp-area-card:hover {
+  transform: translateY(-5px);
+  border-color: #6BADE0;
+  box-shadow: 0 8px 22px rgba(16,36,61,0.2);
+}
+
+.dp-area-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 1.2rem;
+  border-radius: 10px;
+
+  background-color: #DCEBFA;
+  color: #10243D;
+  font-weight: 800;
+}
+
+.dp-area-card h3 {
+  color: #FFFFFF;
+  font-size: 1.4rem;
+  margin: 0 0 0.7rem;
+}
+
+.dp-area-card p {
+  color: #DCEBFA;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
+}
+
+.dp-card-link {
+  margin-top: auto;
+  color: #6BADE0;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.dp-card-future {
+  background: linear-gradient(145deg, #10243D, #193B5D);
+  opacity: 1;
+}
+
+/* ==========================================
+   SOBRE O PROJETO
+========================================== */
+
+.dp-about {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding: 3.5rem max(7%, calc((100vw - 1250px) / 2));
+  background-color: var(--dp-light-gray);
+  border-top: 1px solid #E5EAF0;
+  box-sizing: border-box;
+}
+
+.dp-about p {
+  max-width: 950px;
+  color: #526174;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* ==========================================
+   RESPONSIVIDADE DA PÁGINA INICIAL
+========================================== */
+
+@media (max-width: 700px) {
+  .dp-area-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .dp-hero-content {
+    max-width: 100%;
+  }
+
+  .dp-section {
+    padding: 2.5rem 1.2rem;
+  }
+
+  .dp-about {
+    padding: 2.5rem 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .dp-hero {
+    min-height: 390px;
+    background-position: 65% center;
+  }
+
+  .dp-hero-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* ==========================================
+   PÁGINAS DOS MÓDULOS
+========================================== */
+
+.dp-module-page {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem 4rem;
+  color: #10243D;
+}
+
+/* LINK DE VOLTAR */
+
+.dp-back-link {
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: #1769AA !important;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.dp-back-link:hover {
+  color: #10243D !important;
+  transform: translateX(-3px);
+}
+
+/* APRESENTAÇÃO DO MÓDULO */
+
+.dp-module-intro {
+  padding: 2.8rem;
+  margin-bottom: 3rem;
+  background: linear-gradient(135deg, #10243D, #193B5D);
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(16, 36, 61, 0.12);
+}
+
+.dp-module-label {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #8FC5F0;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.dp-module-intro h1 {
+  margin: 0 0 1rem;
+  color: #FFFFFF;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+}
+
+.dp-module-intro p {
+  max-width: 750px;
+  margin: 0;
+  color: #DCEBFA;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* SEÇÕES */
+
+.dp-module-video,
+.dp-module-material,
+.dp-module-extras {
+  margin-bottom: 3rem;
+}
+
+.dp-module-video h2,
+.dp-module-material h2,
+.dp-module-extras h2 {
+  margin-bottom: 0.6rem;
+  color: #10243D;
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.dp-module-video > p,
+.dp-module-material > p,
+.dp-module-extras > p {
+  margin-bottom: 1.4rem;
+  color: #526174;
+  line-height: 1.7;
+}
+
+/* ESPAÇO DA VIDEOAULA */
+
+.dp-video-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  max-height: 560px;
+  background: linear-gradient(145deg, #10243D, #193B5D);
+  border: 1px solid #294E70;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(16, 36, 61, 0.12);
+}
+
+.dp-video-placeholder > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #1769AA;
+  color: #FFFFFF;
+  font-size: 1.8rem;
+  padding-left: 4px;
+}
+
+.dp-video-placeholder p {
+  margin: 0;
+  color: #DCEBFA;
+  font-weight: 700;
+}
+
+/* MATERIAL COMPLEMENTAR */
+
+.dp-pdf-placeholder {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1.5rem;
+  background: #F5F7FA;
+  border: 1px solid #E1E8F0;
+  border-left: 5px solid #1769AA;
+  border-radius: 12px;
+}
+
+.dp-pdf-placeholder strong {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: #10243D;
+}
+
+.dp-pdf-placeholder p {
+  margin: 0;
+  color: #718096;
+  font-size: 0.9rem;
+}
+
+/* RECURSOS FUTUROS */
+
+.dp-module-extras {
+  padding: 1.8rem;
+  background: #F5F7FA;
+  border: 1px solid #E5EAF0;
+  border-radius: 14px;
+}
+
+.dp-module-extras h2 {
+  font-size: 1.35rem;
+}
+
+/* RESPONSIVIDADE DOS MÓDULOS */
+
+@media (max-width: 700px) {
+  .dp-module-page {
+    padding: 0.5rem 1rem 3rem;
+  }
+
+  .dp-module-intro {
+    padding: 1.8rem;
+  }
+
+  .dp-video-placeholder {
+    border-radius: 10px;
+  }
+
+  .dp-pdf-placeholder {
+    padding: 1rem;
+  }
+}
+
+/* ==========================================
+   PÁGINAS DE ÁREAS E CONTEÚDOS
+========================================== */
+
+body:has(.dp-area-page) h1#_top {
+  display: none !important;
+}
+
+.dp-area-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem 1.5rem 4rem;
+  color: #10243D;
+}
+
+.dp-area-intro {
+  margin-bottom: 3.5rem;
+}
+
+.dp-area-label {
+  display: inline-block;
+  margin-bottom: 0.9rem;
+  color: #1769AA;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.dp-area-intro h1 {
+  margin: 0 0 1rem;
+  color: #10243D;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.dp-area-intro p {
+  max-width: 850px;
+  margin: 0;
+  color: #526174;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* SEÇÃO DE CONTEÚDOS */
+
+.dp-content-section {
+  margin-top: 0;
+}
+
+.dp-section-heading {
+  margin-bottom: 2rem;
+}
+
+.dp-section-heading h2 {
+  margin: 0 0 0.7rem;
+  color: #10243D;
+  font-size: 1.3rem;
+  font-weight: 750;
+  line-height: 1.35;
+}
+
+.dp-section-heading p {
+  max-width: 750px;
+  margin: 0;
+  color: #526174;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* CARTÕES DOS CONTEÚDOS */
+
+.dp-content-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  width: 100%;
+}
+
+.dp-content-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 235px;
+  padding: 1.7rem;
+  background: linear-gradient(145deg, #10243D, #193B5D);
+  border: 1px solid #294E70;
+  border-radius: 16px;
+  text-decoration: none !important;
+  box-shadow: 0 4px 14px rgba(16, 36, 61, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.dp-content-card:hover {
+  transform: translateY(-5px);
+  border-color: #6BADE0;
+  box-shadow: 0 9px 24px rgba(16, 36, 61, 0.2);
+}
+
+.dp-content-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 1.2rem;
+  border-radius: 10px;
+  background: #DCEBFA;
+  color: #10243D;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.dp-content-card h3 {
+  margin: 0 0 0.7rem;
+  color: #FFFFFF;
+  font-size: 1.3rem;
+  font-weight: 750;
+  line-height: 1.35;
+}
+
+.dp-content-card p {
+  margin: 0 0 1.4rem;
+  color: #DCEBFA;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.dp-content-link {
+  margin-top: auto;
+  color: #8FC5F0;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+/* CELULARES E TABLETS */
+
+@media (max-width: 700px) {
+  .dp-area-page {
+    padding: 1rem 1.2rem 3rem;
+  }
+
+  .dp-area-intro {
+    margin-bottom: 2.5rem;
+  }
+
+  .dp-area-intro h1 {
+    font-size: 1.8rem;
+  }
+
+  .dp-content-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .dp-content-card {
+    min-height: 210px;
+  }
+}
+
+/* CABEÇALHO DAS PÁGINAS DOS MÓDULOS */
+
+body:has(.dp-module-page) h1#_top {
+  display: none !important;
+}
+
+.dp-module-intro h1 {
+  font-family: inherit;
+  font-size: 2rem;
+  font-weight: 750;
+  line-height: 1.3;
+  color: #FFFFFF;
+  letter-spacing: normal;
+}
+
+/* ==========================================
+   INTEGRAÇÃO GOOGLE DRIVE
+========================================== */
+
+/* VÍDEO TRADICIONAL */
+
+.dp-drive-video {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #10243D;
+  box-shadow: 0 6px 20px rgba(16, 36, 61, 0.12);
+}
+
+.dp-drive-video iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* PDF */
+
+.dp-drive-pdf {
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  border-radius: 14px;
+  background: #F5F7FA;
+  border: 1px solid #DCE3EA;
+}
+
+.dp-drive-pdf iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* LINKS DOS ARQUIVOS */
+
+.dp-drive-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #1769AA !important;
+  font-size: 0.92rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.dp-drive-link:hover {
+  color: #10243D !important;
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .dp-drive-pdf {
+    height: 500px;
+  }
+}
+
+/* ==========================================
+   CARTÃO E VISUALIZADOR DO PDF
+========================================== */
+
+.dp-pdf-card {
+  padding: 1.5rem;
+  background: #FFFFFF;
+  border: 1px solid #DCE3EA;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(16, 36, 61, 0.06);
+}
+
+.dp-pdf-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.3rem;
+}
+
+.dp-pdf-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background: #DCEBFA;
+  color: #1769AA;
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.dp-pdf-info strong {
+  color: #10243D;
+  font-size: 1rem;
+}
+
+.dp-pdf-info p {
+  margin: 0.3rem 0 0;
+  color: #526174;
+  font-size: 0.9rem;
+}
+
+.dp-pdf-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.dp-pdf-viewer summary {
+  cursor: pointer;
+  padding: 0.75rem 1.2rem;
+  border-radius: 8px;
+  background: #10243D;
+  color: #FFFFFF;
+  font-size: 0.9rem;
+  font-weight: 700;
+  list-style: none;
+}
+
+.dp-pdf-viewer summary::-webkit-details-marker {
+  display: none;
+}
+
+.dp-pdf-viewer summary::before {
+  content: "＋";
+  margin-right: 0.5rem;
+}
+
+.dp-pdf-viewer[open] summary::before {
+  content: "−";
+}
+
+.dp-pdf-frame {
+  width: 100%;
+  margin-top: 1.2rem;
+  overflow: hidden;
+  border: 1px solid #DCE3EA;
+  border-radius: 10px;
+  background: #F5F7FA;
+}
+
+.dp-pdf-frame iframe {
+  display: block;
+  width: 100%;
+  height: 450px;
+  border: none;
+}
+
+.dp-pdf-download {
+  display: inline-block;
+  padding: 0.75rem 1.2rem;
+  border: 1px solid #1769AA;
+  border-radius: 8px;
+  color: #1769AA !important;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none !important;
+}
+
+.dp-pdf-download:hover {
+  background: #DCEBFA;
+}
+
+@media (max-width: 700px) {
+  .dp-pdf-card {
+    padding: 1rem;
+  }
+
+  .dp-pdf-frame iframe {
+    height: 480px;
+  }
+}
+
+/* ==========================================
+   NAVEGAÇÃO MAIS LIMPA - DELTA POSITIVO
+========================================== */
+
+.sidebar {
+  display: none !important;
+}
+
+.right-sidebar,
+.right-sidebar-container {
+  display: none !important;
+}
+
+starlight-menu-button {
+  display: none !important;
+}
+
+.main-frame {
+  grid-template-columns: minmax(0, 1fr) !important;
+}
+
+.main-pane {
+  grid-column: 1 !important;
+}
+
+.pagination-links {
+  display: none !important;
+}
+
+/* ==========================================
+   CAPAS INTERATIVAS DAS VIDEOAULAS
+========================================== */
+
+/* ÁREA DA CAPA E DO PLAYER */
+
+.dp-video-cover {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #10243D;
+  box-shadow: 0 6px 20px rgba(16, 36, 61, 0.12);
+  isolation: isolate;
+  box-sizing: border-box;
+}
+
+/* IMAGEM DA CAPA */
+
+.dp-video-cover > img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+}
+
+/* BOTÃO DE REPRODUÇÃO */
+
+.dp-video-play {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 76px;
+  height: 76px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.dp-video-play span {
+  display: block;
+  width: 0;
+  height: 0;
+  margin-left: 8px;
+  border-top: 17px solid transparent;
+  border-bottom: 17px solid transparent;
+  border-left: 25px solid #FFFFFF;
+  filter: drop-shadow(0 2px 5px rgba(0,0,0,0.35));
+}
+
+.dp-video-play:hover {
+  transform: translate(-50%, -50%) scale(1.18);
+}
+
+/* ==========================================
+   PLAYER - OCUPA TODA A ÁREA DA CAPA
+========================================== */
+
+.dp-video-cover.is-playing {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  min-height: 0;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #10243D;
+  box-sizing: border-box;
+}
+
+/* IFRAME DO GOOGLE DRIVE */
+
+.dp-video-cover.is-playing iframe {
+  position: absolute !important;
+  inset: 0 !important;
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  max-width: none !important;
+  max-height: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-sizing: border-box !important;
+}
+
+/* ADAPTAÇÃO PARA CELULARES */
+
+@media (max-width: 700px) {
+  .dp-video-play {
+    width: 58px;
+    height: 58px;
+  }
+
+  .dp-video-play span {
+    border-top-width: 12px;
+    border-bottom-width: 12px;
+    border-left-width: 18px;
+  }
+
+  .dp-video-cover,
+  .dp-video-cover.is-playing {
+    border-radius: 10px;
+  }
+}
+
+
+
+
+
+
+

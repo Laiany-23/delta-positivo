@@ -1,0 +1,51 @@
+
+---
+const { cover, video, title } = Astro.props;
+---
+
+<div class="dp-video-cover" data-video={video}>
+
+  <img
+    src={cover}
+    alt={`Capa da videoaula: ${title}`}
+  />
+
+  <button
+    class="dp-video-play"
+    type="button"
+    aria-label={`Reproduzir ${title}`}
+  >
+    <span></span>
+  </button>
+
+</div>
+
+<script>
+  document.addEventListener('click', (event) => {
+    const target = event.target;
+
+    if (!(target instanceof Element)) return;
+
+    const button = target.closest('.dp-video-play');
+
+    if (!button) return;
+
+    const container = button.closest('.dp-video-cover');
+
+    if (!container || container.classList.contains('is-playing')) return;
+
+    const videoUrl = container.getAttribute('data-video');
+
+    if (!videoUrl) return;
+
+    const iframe = document.createElement('iframe');
+
+    iframe.src = videoUrl + '?autoplay=1';
+    iframe.allow = 'autoplay; fullscreen';
+    iframe.allowFullscreen = true;
+    iframe.title = 'Videoaula do Delta Positivo';
+
+    container.replaceChildren(iframe);
+    container.classList.add('is-playing');
+  });
+</script>
