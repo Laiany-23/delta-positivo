@@ -997,6 +997,292 @@ starlight-menu-button {
   }
 }
 
+/* ==========================================
+   DELTA POSITIVO - MODO NOTURNO
+========================================== */
+
+:root[data-theme='dark'] {
+  /* Identidade visual adaptada */
+  --dp-navy: #E4EFFA;
+  --dp-blue: #6BADE0;
+  --dp-light-blue: #29445F;
+  --dp-light-gray: #14263A;
+
+  /* Cores gerais do Starlight */
+  --sl-color-accent-low: #1B3854;
+  --sl-color-accent: #6BADE0;
+  --sl-color-accent-high: #DCEBFA;
+
+  --sl-color-bg: #0D1B2A;
+  --sl-color-bg-nav: #10243D;
+  --sl-color-bg-sidebar: #10243D;
+}
+
+/* ==========================================
+   CABEÇALHO
+========================================== */
+
+:root[data-theme='dark'] header.header,
+:root[data-theme='dark'] .dp-header {
+  background: #10243D !important;
+  border-color: #29445F !important;
+}
+
+:root[data-theme='dark'] .dp-nav-link {
+  color: #E4EFFA;
+}
+
+:root[data-theme='dark'] .dp-nav-link:hover {
+  color: #8FC5F0;
+}
+
+:root[data-theme='dark'] .dp-dropdown-menu {
+  background: #172D43;
+  border-color: #36516E;
+}
+
+:root[data-theme='dark'] .dp-dropdown-item {
+  color: #E4EFFA;
+}
+
+:root[data-theme='dark'] .dp-dropdown-item span {
+  color: #AFC2D5;
+}
+
+:root[data-theme='dark'] a.dp-dropdown-item:hover {
+  background: #29445F;
+}
+
+/* ==========================================
+   PÁGINA INICIAL
+========================================== */
+
+:root[data-theme='dark'] .dp-home {
+  color: #E4EFFA;
+}
+
+/* Banner */
+
+:root[data-theme='dark'] .dp-hero {
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(13,27,42,0.94) 0%,
+      rgba(13,27,42,0.82) 35%,
+      rgba(13,27,42,0.28) 70%,
+      rgba(13,27,42,0.08) 100%
+    ),
+    url('/images/delta-positivo-banner-aviao2.png');
+}
+
+:root[data-theme='dark'] .dp-hero h1,
+:root[data-theme='dark'] .dp-hero-content > p {
+  color: #FFFFFF;
+}
+
+:root[data-theme='dark'] .dp-hero-content strong {
+  color: #8FC5F0;
+}
+
+/* Botão secundário do banner */
+
+:root[data-theme='dark'] .dp-button-secondary {
+  background: rgba(16,36,61,0.85);
+  color: #FFFFFF !important;
+  border-color: #8FC5F0;
+}
+
+:root[data-theme='dark'] .dp-button-secondary:hover {
+  background: #29445F;
+}
+
+/* Seção de áreas */
+
+:root[data-theme='dark'] .dp-section h2,
+:root[data-theme='dark'] .dp-about h2 {
+  color: #E4EFFA;
+}
+
+:root[data-theme='dark'] .dp-section > p {
+  color: #B8C9D9;
+}
+
+/* Cartões das áreas */
+
+:root[data-theme='dark'] .dp-area-card,
+:root[data-theme='dark'] .dp-card-future {
+  background: linear-gradient(145deg, #172D43, #203F5C);
+  border-color: #36516E;
+}
+
+:root[data-theme='dark'] .dp-area-number {
+  background: #29445F;
+  color: #FFFFFF;
+}
+
+:root[data-theme='dark'] .dp-area-card h3 {
+  color: #FFFFFF;
+}
+
+:root[data-theme='dark'] .dp-area-card p {
+  color: #D0DFEC;
+}
+
+/* Sobre o projeto */
+
+:root[data-theme='dark'] .dp-about {
+  background: #14263A;
+  border-color: #29445F;
+}
+
+:root[data-theme='dark'] .dp-about p {
+  color: #C3D2E0;
+}
+
+/* ==========================================
+   PÁGINAS DOS MÓDULOS
+========================================== */
+
+:root[data-theme='dark'] .dp-module-page {
+  color: #E4EFFA;
+}
+
+:root[data-theme='dark'] .dp-module-video h2,
+:root[data-theme='dark'] .dp-module-material h2,
+:root[data-theme='dark'] .dp-module-extras h2 {
+  color: #E4EFFA;
+}
+
+:root[data-theme='dark'] .dp-module-video > p,
+:root[data-theme='dark'] .dp-module-material > p,
+:root[data-theme='dark'] .dp-module-extras > p {
+  color: #B8C9D9;
+}
+
+:root[data-theme='dark'] .dp-back-link {
+  color: #8FC5F0 !important;
+}
+
+:root[data-theme='dark'] .dp-back-link:hover {
+  color: #FFFFFF !important;
+}
+
+/* Caixas de conteúdo */
+
+:root[data-theme='dark'] .dp-module-extras,
+:root[data-theme='dark'] .dp-pdf-placeholder {
+  background: #172D43;
+  border-color: #36516E;
+}
+
+:root[data-theme='dark'] .dp-pdf-placeholder strong {
+  color: #E4EFFA;
+}
+
+:root[data-theme='dark'] .dp-pdf-placeholder p {
+  color: #B8C9D9;
+}
+
+/* ==========================================
+   PÁGINAS DE ÁREAS E CONTEÚDOS
+========================================== */
+
+:root[data-theme='dark'] .dp-area-page {
+  color: #E4EFFA;
+}
+
+:root[data-theme='dark'] .dp-area-label {
+  color: #8FC5F0;
+}
+
+:root[data-theme='dark'] .dp-area-intro h1,
+:root[data-theme='dark'] .dp-section-heading h2 {
+  color: #E4EFFA;
+}
+
+:root[data-theme='dark'] .dp-area-intro p,
+:root[data-theme='dark'] .dp-section-heading p {
+  color: #B8C9D9;
+}
+
+/* Cartões dos conteúdos */
+
+:root[data-theme='dark'] .dp-content-card {
+  background: linear-gradient(145deg, #172D43, #203F5C);
+  border-color: #36516E;
+}
+
+:root[data-theme='dark'] .dp-content-number {
+  background: #29445F;
+  color: #FFFFFF;
+}
+
+:root[data-theme='dark'] .dp-content-card h3 {
+  color: #FFFFFF;
+}
+
+:root[data-theme='dark'] .dp-content-card p {
+  color: #D0DFEC;
+}
+
+/* ==========================================
+   GOOGLE DRIVE E PDF
+========================================== */
+
+:root[data-theme='dark'] .dp-drive-pdf,
+:root[data-theme='dark'] .dp-pdf-frame {
+  background: #172D43;
+  border-color: #36516E;
+}
+
+:root[data-theme='dark'] .dp-pdf-card {
+  background: #172D43;
+  border-color: #36516E;
+}
+
+:root[data-theme='dark'] .dp-pdf-info strong {
+  color: #E4EFFA;
+}
+
+:root[data-theme='dark'] .dp-pdf-info p {
+  color: #B8C9D9;
+}
+
+:root[data-theme='dark'] .dp-pdf-icon {
+  background: #29445F;
+  color: #8FC5F0;
+}
+
+:root[data-theme='dark'] .dp-pdf-download {
+  color: #8FC5F0 !important;
+  border-color: #6BADE0;
+}
+
+:root[data-theme='dark'] .dp-pdf-download:hover {
+  background: #29445F;
+}
+
+/* ==========================================
+   LINKS E DETALHES
+========================================== */
+
+:root[data-theme='dark'] .dp-drive-link {
+  color: #8FC5F0 !important;
+}
+
+:root[data-theme='dark'] .dp-drive-link:hover {
+  color: #FFFFFF !important;
+}
+
+/* ==========================================
+   VÍDEOS
+========================================== */
+
+:root[data-theme='dark'] .dp-video-cover,
+:root[data-theme='dark'] .dp-video-placeholder {
+  background: #10243D;
+}
+
 
 
 
