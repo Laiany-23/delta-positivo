@@ -1284,6 +1284,121 @@ starlight-menu-button {
 }
 
 
+/* ==========================================
+   PÁGINA INICIAL - AJUSTES DO MODO ESCURO
+========================================== */
+
+:root[data-theme='dark'] .dp-home {
+  --dp-navy: #EAF2FC;
+  --dp-blue: #6BADE0;
+  --dp-light-blue: #193B5D;
+  --dp-light-gray: #14283D;
+
+  color: #EAF2FC;
+}
+
+/* Banner Conheça o Delta Positivo */
+
+:root[data-theme='dark']
+.dp-home > section[style*="background: #eaf2fc"] {
+  background: #193B5D !important;
+}
+
+:root[data-theme='dark']
+.dp-home > section[style*="background: #eaf2fc"] h2 {
+  color: #FFFFFF !important;
+}
+
+:root[data-theme='dark']
+.dp-home > section[style*="background: #eaf2fc"] p {
+  color: #DCEBFA !important;
+}
+
+:root[data-theme='dark']
+.dp-home > section[style*="background: #eaf2fc"] a {
+  background-color: #1769AA;
+  border-color: #6BADE0;
+  color: #FFFFFF !important;
+}
+
+/* Divisória do banner */
+
+:root[data-theme='dark']
+.dp-home > section[style*="background: #eaf2fc"] div[style*="border-right"] {
+  border-color: #6BADE0 !important;
+}
+
+/* Títulos e textos das seções */
+
+:root[data-theme='dark'] .dp-home .dp-section h2,
+:root[data-theme='dark'] .dp-home .dp-about h2 {
+  color: #EAF2FC !important;
+}
+
+:root[data-theme='dark'] .dp-home .dp-section > p,
+:root[data-theme='dark'] .dp-home .dp-section > div > p,
+:root[data-theme='dark'] .dp-home .dp-about p {
+  color: #C6D7E8 !important;
+}
+
+/* Cartões de Como utilizar a plataforma */
+
+:root[data-theme='dark']
+.dp-home .dp-section div[style*="border: 1.5px solid #1769AA"] {
+  background: #14283D !important;
+  border-color: #6BADE0 !important;
+}
+
+/* Textos dentro dos cartões */
+
+:root[data-theme='dark']
+.dp-home .dp-section div[style*="border: 1.5px solid #1769AA"] p {
+  color: #EAF2FC !important;
+}
+
+/* Ícones */
+
+:root[data-theme='dark']
+.dp-home .dp-section svg {
+  stroke: #6BADE0 !important;
+}
+
+/* Cursor: mantém somente o contorno */
+
+:root[data-theme='dark']
+.dp-home .dp-section svg[aria-label="Cursor de mouse"] {
+  fill: none !important;
+}
+
+/* Setas entre os cartões */
+
+:root[data-theme='dark']
+.dp-home .dp-section div[style*="font-size: 30px"] {
+  color: #6BADE0 !important;
+}
+
+/* Números dos cartões */
+
+:root[data-theme='dark']
+.dp-home .dp-section div[style*="border: 1.5px solid #1769AA"] span {
+  background: #1769AA !important;
+  color: #FFFFFF !important;
+}
+
+/* Cartões das áreas */
+
+:root[data-theme='dark'] .dp-area-card {
+  background: linear-gradient(145deg, #14283D, #193B5D);
+  border-color: #355C7E;
+}
+
+/* Seção Sobre */
+
+:root[data-theme='dark'] .dp-about {
+  background: #14283D;
+  border-color: #29445E;
+}
+
 
 
 

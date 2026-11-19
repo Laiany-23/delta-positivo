@@ -28,6 +28,163 @@ template: splash
     </div>
   </section>
 
+  {/* Apresentação da plataforma */}
+  <section
+    style="display: flex; align-items: center; gap: 24px; padding: 22px 30px; margin: 35px 0; background: #eaf2fc; border-radius: 18px; flex-wrap: wrap;"
+  >
+
+    <div
+      style="display: flex; align-items: center; justify-content: center; min-width: 150px; color: #1769AA; border-right: 2px solid #1769AA; padding-right: 24px;"
+    >
+      <svg
+        viewBox="0 0 100 100"
+        width="100"
+        height="100"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        aria-label="Livro aberto"
+      >
+        <path d="M50 25 C35 15 20 15 10 20 V75 C25 70 38 72 50 82" />
+        <path d="M50 25 C65 15 80 15 90 20 V75 C75 70 62 72 50 82" />
+        <path d="M50 25 V82" />
+        <path d="M5 87 C25 77 40 82 50 90 C60 82 75 77 95 87" />
+      </svg>
+    </div>
+
+    <div style="flex: 1; min-width: 220px;">
+      <h2 style="margin: 0 0 6px; color: #10243D; font-family: inherit; font-size: 1.65rem; font-weight: 800; letter-spacing: -0.02em;">
+        Conheça o Delta Positivo
+      </h2>
+
+      <p style="margin: 0; color: #304b6b;">
+        Aqui você encontra conteúdos organizados, materiais de apoio e
+        recursos práticos para aprofundar seus conhecimentos em diversas
+        áreas da engenharia aeroespacial.
+      </p>
+    </div>
+
+    <a
+      href="#sobre"
+      className="dp-button dp-button-primary"
+      style="white-space: nowrap; padding: 13px 25px;"
+    >
+      Saiba mais →
+    </a>
+
+  </section>
+
+  {/* Como utilizar a plataforma */}
+  <section className="dp-section" style="margin: 45px 0;">
+
+    <div style="margin-bottom: 22px;">
+      <h2>Como utilizar a plataforma</h2>
+      <p>Siga estes passos simples para começar seu aprendizado:</p>
+    </div>
+
+    <div
+      style="display: grid; grid-template-columns: minmax(0, 1fr) 24px minmax(0, 1fr) 24px minmax(0, 1fr); align-items: center; gap: 14px;"
+    >
+
+      {/* Etapa 1 */}
+      <div
+        style="position: relative; min-height: 170px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px 14px; background: #FFFFFF; border: 1.5px solid #1769AA; border-radius: 14px; text-align: center;"
+      >
+        <span style="position: absolute; top: 14px; left: 16px; display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; background: #1769AA; color: white; font-weight: bold;">
+          1
+        </span>
+
+        <svg
+          viewBox="0 0 48 48"
+          width="50"
+          height="50"
+          fill="none"
+          stroke="#1769AA"
+          strokeWidth="2"
+          strokeLinejoin="round"
+          aria-label="Cursor de mouse"
+        >
+          <path d="M9 4 L9 39 L18 30 L24 44 L30 41 L24 27 L39 27 Z" />
+        </svg>
+
+        <p style="margin: 12px 0 0; font-size: 0.95rem;">
+          Escolha uma<br />área de conhecimento.
+        </p>
+      </div>
+
+      <div style="text-align: center; color: #1769AA; font-size: 30px; font-weight: 600;">
+        →
+      </div>
+
+      {/* Etapa 2 */}
+      <div
+        style="position: relative; min-height: 170px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px 14px; background: #FFFFFF; border: 1.5px solid #1769AA; border-radius: 14px; text-align: center;"
+      >
+        <span style="position: absolute; top: 14px; left: 16px; display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; background: #1769AA; color: white; font-weight: bold;">
+          2
+        </span>
+
+        <svg
+          viewBox="0 0 48 48"
+          width="50"
+          height="50"
+          fill="none"
+          stroke="#1769AA"
+          strokeWidth="2.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          aria-label="Vídeo"
+        >
+          <rect x="4" y="8" width="40" height="32" rx="4" />
+          <path d="M19 15 L33 24 L19 33 Z" fill="#1769AA" stroke="#1769AA"/>
+        </svg>
+
+        <p style="margin: 12px 0 0; font-size: 0.95rem;">
+          Acesse os módulos<br />disponíveis.
+        </p>
+      </div>
+
+      <div style="text-align: center; color: #1769AA; font-size: 30px; font-weight: 600;">
+        →
+      </div>
+
+      {/* Etapa 3 */}
+      <div
+        style="position: relative; min-height: 170px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px 14px; background: #FFFFFF; border: 1.5px solid #1769AA; border-radius: 14px; text-align: center;"
+      >
+        <span style="position: absolute; top: 14px; left: 16px; display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; background: #1769AA; color: white; font-weight: bold;">
+          3
+        </span>
+
+        <svg
+          viewBox="0 0 48 48"
+          width="50"
+          height="50"
+          fill="none"
+          stroke="#1769AA"
+          strokeWidth="2.3"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          aria-label="Capelo de formatura"
+        >
+          <path d="M4 17 L24 7 L44 17 L24 27 Z" />
+          <path d="M12 21 V31 C19 37 29 37 36 31 V21" />
+          <path d="M44 17 V30" />
+          <circle cx="44" cy="33" r="2" fill="#1769AA"/>
+        </svg>
+
+        <p style="margin: 12px 0 0; font-size: 0.95rem;">
+          Estude com videoaulas<br />e materiais complementares.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  {/* Áreas de conhecimento */}
   <section id="areas" className="dp-section">
     <h2>Explore as áreas de conhecimento</h2>
 
@@ -38,29 +195,39 @@ template: splash
 
     <div className="dp-area-grid">
 
-      <a href="/areas/estruturas/" className="dp-area-card">
+      <a href="/areas/gestao-de-projetos/" className="dp-area-card">
         <span className="dp-area-number">01</span>
+        <h3>Gestão de Projetos</h3>
+        <p>
+          Organização, planejamento, gestão do conhecimento e
+          continuidade dos projetos da equipe.
+        </p>
+        <span className="dp-card-link">Explorar área →</span>
+      </a>
+
+      <a href="/areas/estruturas/" className="dp-area-card">
+        <span className="dp-area-number">02</span>
         <h3>Estruturas</h3>
         <p>Materiais, componentes e sistemas estruturais de aeronaves.</p>
         <span className="dp-card-link">Explorar área →</span>
       </a>
 
       <a href="/areas/cargas/" className="dp-area-card">
-        <span className="dp-area-number">02</span>
+        <span className="dp-area-number">03</span>
         <h3>Cargas</h3>
         <p>Esforços, solicitações e distribuição de cargas na aeronave.</p>
         <span className="dp-card-link">Explorar área →</span>
       </a>
 
       <div className="dp-area-card dp-card-future">
-        <span className="dp-area-number">03</span>
+        <span className="dp-area-number">04</span>
         <h3>Aeroelasticidade</h3>
         <p>Interação entre forças aerodinâmicas, elasticidade e movimento.</p>
         <span className="dp-card-link">Em desenvolvimento</span>
       </div>
 
       <div className="dp-area-card dp-card-future">
-        <span className="dp-area-number">04</span>
+        <span className="dp-area-number">05</span>
         <h3>Aerodinâmica</h3>
         <p>Escoamento do ar, sustentação, arrasto e desempenho da aeronave.</p>
         <span className="dp-card-link">Em desenvolvimento</span>
@@ -69,6 +236,7 @@ template: splash
     </div>
   </section>
 
+  {/* Sobre o projeto */}
   <section id="sobre" className="dp-about">
     <h2>Sobre o Projeto Delta Positivo</h2>
     <p>
@@ -82,6 +250,12 @@ template: splash
   </section>
 
 </main>
+
+
+
+
+
+
 
 
 
