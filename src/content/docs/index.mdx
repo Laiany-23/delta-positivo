@@ -78,121 +78,126 @@ template: splash
 
   </section>
 
-  {/* Como utilizar a plataforma */}
-  <section className="dp-section" style="margin: 45px 0;">
 
-    <div style="margin-bottom: 22px;">
-      <h2>Como utilizar a plataforma</h2>
-      <p>Siga estes passos simples para começar seu aprendizado:</p>
+
+{/* Como utilizar a plataforma */}
+<section className="dp-section" style="margin: 45px 0;">
+
+  <div style="margin-bottom: 22px;">
+    <h2>Como utilizar a plataforma</h2>
+    <p>Siga estes passos simples para começar seu aprendizado:</p>
+  </div>
+
+  <div
+    className="dp-steps-grid"
+    style="display: grid; grid-template-columns: minmax(0, 1fr) 24px minmax(0, 1fr) 24px minmax(0, 1fr); align-items: start; gap: 14px;"
+  >
+
+    {/* Etapa 1 */}
+    <div
+      className="dp-step-card"
+      style="position: relative; height: 200px; min-height: 200px; margin: 0; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px 14px; background: #FFFFFF; border: 2px solid #1769AA; border-radius: 14px; text-align: center;"
+    >
+      <span style="position: absolute; top: 14px; left: 16px; display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; background: #1769AA; color: white; font-weight: bold;">
+        1
+      </span>
+
+      <svg
+        viewBox="0 0 48 48"
+        width="54"
+        height="54"
+        style="transform: translateY(12px);"
+        fill="none"
+        stroke="#1769AA"
+        strokeWidth="2"
+        strokeLinejoin="round"
+        aria-label="Cursor de mouse"
+      >
+        <path d="M9 4 L9 39 L18 30 L24 44 L30 41 L24 27 L39 27 Z" />
+      </svg>
+
+      <p style="margin: 12px 0 0; font-size: 0.95rem;">
+        Escolha uma<br />área de conhecimento.
+      </p>
     </div>
 
     <div
-      className="dp-steps-grid"
-      style="display: grid; grid-template-columns: minmax(0, 1fr) 24px minmax(0, 1fr) 24px minmax(0, 1fr); align-items: start; gap: 14px;"
+      className="dp-step-arrow"
+      style="display: flex; align-items: center; justify-content: center; align-self: center; color: #1769AA; font-size: 30px; font-weight: 600;"
     >
-
-      {/* Etapa 1 */}
-      <div
-        className="dp-step-card"
-        style="position: relative; height: 220px; min-height: 220px; margin: 0; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px 14px; background: #FFFFFF; border: 1.5px solid #1769AA; border-radius: 14px; text-align: center;"
-      >
-        <span style="position: absolute; top: 14px; left: 16px; display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; background: #1769AA; color: white; font-weight: bold;">
-          1
-        </span>
-
-        <svg
-          viewBox="0 0 48 48"
-          width="50"
-          height="50"
-          fill="none"
-          stroke="#1769AA"
-          strokeWidth="2"
-          strokeLinejoin="round"
-          aria-label="Cursor de mouse"
-        >
-          <path d="M9 4 L9 39 L18 30 L24 44 L30 41 L24 27 L39 27 Z" />
-        </svg>
-
-        <p style="margin: 12px 0 0; font-size: 0.95rem;">
-          Escolha uma<br />área de conhecimento.
-        </p>
-      </div>
-
-      <div
-        className="dp-step-arrow"
-        style="display: flex; align-items: center; justify-content: center; align-self: center; color: #1769AA; font-size: 30px; font-weight: 600;"
-      >
-        →
-      </div>
-
-      {/* Etapa 2 */}
-      <div
-        className="dp-step-card"
-        style="position: relative; height: 220px; min-height: 220px; margin: 0; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px 14px; background: #FFFFFF; border: 1.5px solid #1769AA; border-radius: 14px; text-align: center;"
-      >
-        <span style="position: absolute; top: 14px; left: 16px; display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; background: #1769AA; color: white; font-weight: bold;">
-          2
-        </span>
-
-        <svg
-          viewBox="0 0 48 48"
-          width="50"
-          height="50"
-          fill="none"
-          stroke="#1769AA"
-          strokeWidth="2.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          aria-label="Vídeo"
-        >
-          <rect x="4" y="8" width="40" height="32" rx="4" />
-          <path d="M19 15 L33 24 L19 33 Z" fill="#1769AA" stroke="#1769AA"/>
-        </svg>
-
-        <p style="margin: 12px 0 0; font-size: 0.95rem;">
-          Acesse os módulos<br />disponíveis.
-        </p>
-      </div>
-
-      <div
-        className="dp-step-arrow"
-        style="display: flex; align-items: center; justify-content: center; align-self: center; color: #1769AA; font-size: 30px; font-weight: 600;"
-      >
-        →
-      </div>
-
-      {/* Etapa 3 */}
-      <div
-        className="dp-step-card"
-        style="position: relative; height: 220px; min-height: 220px; margin: 0; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px 14px; background: #FFFFFF; border: 1.5px solid #1769AA; border-radius: 14px; text-align: center;"
-      >
-        <span style="position: absolute; top: 14px; left: 16px; display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; background: #1769AA; color: white; font-weight: bold;">
-          3
-        </span>
-
-        <svg
-          viewBox="0 0 48 48"
-          width="50"
-          height="50"
-          fill="none"
-          stroke="#1769AA"
-          strokeWidth="2.3"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          aria-label="Capelo de formatura"
-        >
-          <path d="M4 17 L24 7 L44 17 L24 27 Z" />
-          <path d="M12 21 V31 C19 37 29 37 36 31 V21" />
-          <path d="M44 17 V30" />
-          <circle cx="44" cy="33" r="2" fill="#1769AA"/>
-        </svg>
-
-        <p style="margin: 12px 0 0; font-size: 0.95rem;">
-          Estude com videoaulas<br />e materiais complementares.
-        </p>
-      </div>
-
+      →
     </div>
+
+    {/* Etapa 2 */}
+    <div
+      className="dp-step-card"
+      style="position: relative; height: 200px; min-height: 200px; margin: 0; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px 14px; background: #FFFFFF; border: 2px solid #1769AA; border-radius: 14px; text-align: center;"
+    >
+      <span style="position: absolute; top: 14px; left: 16px; display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; background: #1769AA; color: white; font-weight: bold;">
+        2
+      </span>
+
+      <svg
+        viewBox="0 0 48 48"
+        width="54"
+        height="54"
+        style="transform: translateY(12px);"
+        fill="none"
+        stroke="#1769AA"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        aria-label="Vídeo"
+      >
+        <rect x="4" y="8" width="40" height="32" rx="4" />
+        <path d="M19 15 L33 24 L19 33 Z" fill="#1769AA" stroke="#1769AA"/>
+      </svg>
+
+      <p style="margin: 12px 0 0; font-size: 0.95rem;">
+        Acesse os módulos<br />disponíveis.
+      </p>
+    </div>
+
+    <div
+      className="dp-step-arrow"
+      style="display: flex; align-items: center; justify-content: center; align-self: center; color: #1769AA; font-size: 30px; font-weight: 600;"
+    >
+      →
+    </div>
+
+    {/* Etapa 3 */}
+    <div
+      className="dp-step-card"
+      style="position: relative; height: 200px; min-height: 200px; margin: 0; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px 14px; background: #FFFFFF; border: 2px solid #1769AA; border-radius: 14px; text-align: center;"
+    >
+      <span style="position: absolute; top: 14px; left: 16px; display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; background: #1769AA; color: white; font-weight: bold;">
+        3
+      </span>
+
+      <svg
+        viewBox="0 0 48 48"
+        width="54"
+        height="54"
+        style="transform: translateY(12px);"
+        fill="none"
+        stroke="#1769AA"
+        strokeWidth="2.3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        aria-label="Capelo de formatura"
+      >
+        <path d="M4 17 L24 7 L44 17 L24 27 Z" />
+        <path d="M12 21 V31 C19 37 29 37 36 31 V21" />
+        <path d="M44 17 V30" />
+        <circle cx="44" cy="33" r="2" fill="#1769AA"/>
+      </svg>
+
+      <p style="margin: 12px 0 0; font-size: 0.95rem;">
+        Estude com videoaulas<br />e materiais complementares.
+      </p>
+    </div>
+
+  </div>
 
   </section>
 
