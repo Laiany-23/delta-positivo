@@ -1667,5 +1667,17 @@ starlight-menu-button {
   padding-top: 12px;
 }
 
+/* CARTÕES COMO UTILIZAR - MODO ESCURO */
+:root[data-theme='dark'] .dp-home .dp-step-card {
+  background: #14263A !important;
+  border-color: #6BADE0 !important;
+}
 
+:root[data-theme='dark'] .dp-home .dp-step-card svg {
+  stroke: #6BADE0;
+}
+
+:root[data-theme='dark'] .dp-home .dp-step-arrow {
+  color: #6BADE0 !important;
+}
 
