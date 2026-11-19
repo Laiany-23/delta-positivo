@@ -59,6 +59,7 @@ body:has(.dp-home) h1#_top {
   color: var(--dp-navy);
 }
 
+
 /* ==========================================
    BANNER PRINCIPAL
 ========================================== */
@@ -114,6 +115,7 @@ body:has(.dp-home) h1#_top {
   color: var(--dp-blue);
   font-style: italic;
 }
+
 
 /* ==========================================
    BOTÕES DO BANNER
@@ -273,44 +275,117 @@ a.dp-area-card:hover {
   box-sizing: border-box;
 }
 
-.dp-about p {
-  max-width: 950px;
-  color: #526174;
-  font-size: 1.05rem;
-  line-height: 1.8;
+/* ========================================
+   RESPONSIVIDADE DA PÁGINA INICIAL
+======================================== */
+
+/* CONFIGURAÇÃO GERAL */
+
+.dp-home {
+  width: 100%;
+  max-width: none;
+  overflow-x: visible;
+  box-sizing: border-box;
 }
 
-/* ==========================================
-   RESPONSIVIDADE DA PÁGINA INICIAL
-========================================== */
+.dp-home img,
+.dp-home svg {
+  max-width: 100%;
+}
+
+/* APRESENTAÇÃO */
 
 @media (max-width: 700px) {
-  .dp-area-grid {
-    grid-template-columns: 1fr !important;
+  .dp-home .dp-intro-banner {
+    flex-direction: column;
+    align-items: stretch !important;
+    gap: 16px !important;
+    padding: 22px 20px !important;
+    margin: 25px 0 !important;
   }
 
-  .dp-hero-content {
-    max-width: 100%;
+  .dp-home .dp-intro-icon {
+    min-width: 0 !important;
+    width: 100%;
+    padding: 0 0 14px !important;
+    border-right: none !important;
+    border-bottom: 2px solid #1769AA;
   }
 
-  .dp-section {
-    padding: 2.5rem 1.2rem;
+  .dp-home .dp-intro-icon svg {
+    width: 76px;
+    height: 76px;
   }
 
-  .dp-about {
-    padding: 2.5rem 1.2rem;
+  .dp-home .dp-intro-text {
+    min-width: 0 !important;
+    width: 100%;
+  }
+
+  .dp-home .dp-intro-text h2 {
+    font-size: 1.35rem !important;
+  }
+
+  .dp-home .dp-intro-button {
+    align-self: flex-start;
+    white-space: normal !important;
   }
 }
 
-@media (max-width: 480px) {
-  .dp-hero {
-    min-height: 390px;
-    background-position: 65% center;
+/* COMO UTILIZAR */
+
+@media (max-width: 700px) {
+  .dp-home .dp-steps-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 12px !important;
   }
 
-  .dp-hero-buttons {
-    flex-direction: column;
-    align-items: flex-start;
+  .dp-home .dp-step-card {
+    width: 100%;
+    height: auto !important;
+    min-height: 175px !important;
+    padding: 25px 18px !important;
+  }
+
+  .dp-home .dp-step-arrow {
+    transform: rotate(90deg);
+    height: 28px;
+    font-size: 26px !important;
+  }
+}
+
+/* AJUSTES PARA CELULARES ESTREITOS */
+
+@media (max-width: 480px) {
+  .dp-home .dp-intro-banner {
+    padding: 18px 16px !important;
+  }
+
+  .dp-home .dp-section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .dp-home .dp-section h2,
+  .dp-home .dp-about h2 {
+    font-size: 1.4rem;
+    line-height: 1.3;
+  }
+
+  .dp-home .dp-section > p,
+  .dp-home .dp-about p {
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+
+  .dp-home .dp-area-card {
+    min-width: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .dp-home .dp-about {
+    padding: 28px 20px;
   }
 }
 
@@ -1400,7 +1475,197 @@ starlight-menu-button {
 }
 
 
+/* ========================================
+   RESPONSIVIDADE DA PÁGINA INICIAL
+======================================== */
 
+.dp-home img,
+.dp-home svg {
+  max-width: 100%;
+}
+
+/* APRESENTAÇÃO */
+
+@media (max-width: 700px) {
+  .dp-home .dp-intro-banner {
+    flex-direction: column;
+    align-items: stretch !important;
+    gap: 16px !important;
+    padding: 22px 20px !important;
+    margin: 25px 0 !important;
+  }
+
+  .dp-home .dp-intro-icon {
+    min-width: 0 !important;
+    width: 100%;
+    padding: 0 0 14px !important;
+    border-right: none !important;
+    border-bottom: 2px solid #1769AA;
+  }
+
+  .dp-home .dp-intro-icon svg {
+    width: 76px;
+    height: 76px;
+  }
+
+  .dp-home .dp-intro-text {
+    min-width: 0 !important;
+    width: 100%;
+  }
+
+  .dp-home .dp-intro-text h2 {
+    font-size: 1.35rem !important;
+  }
+
+  .dp-home .dp-intro-button {
+    align-self: flex-start;
+    white-space: normal !important;
+  }
+}
+
+/* COMO UTILIZAR */
+
+@media (max-width: 700px) {
+  .dp-home .dp-steps-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 12px !important;
+  }
+
+  .dp-home .dp-step-card {
+    width: 100%;
+    height: auto !important;
+    min-height: 175px !important;
+    padding: 25px 18px !important;
+  }
+
+  .dp-home .dp-step-arrow {
+    transform: rotate(90deg);
+    height: 28px;
+    font-size: 26px !important;
+  }
+}
+
+/* AJUSTES PARA CELULARES ESTREITOS */
+
+@media (max-width: 480px) {
+  .dp-home .dp-intro-banner {
+    padding: 18px 16px !important;
+  }
+
+  .dp-home .dp-section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .dp-home .dp-section h2,
+  .dp-home .dp-about h2 {
+    font-size: 1.4rem;
+    line-height: 1.3;
+  }
+
+  .dp-home .dp-section > p,
+  .dp-home .dp-about p {
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+
+  .dp-home .dp-about {
+    padding: 28px 20px;
+  }
+}
+
+/* AJUSTE DA LARGURA DA PÁGINA INICIAL */
+
+.dp-home {
+  width: 100%;
+  max-width: none;
+  overflow: visible;
+  box-sizing: border-box;
+}
+
+/* AJUSTE DOS CARTÕES DAS ÁREAS NO CELULAR */
+
+@media (max-width: 700px) {
+  .dp-home .dp-area-grid {
+    grid-template-columns: 1fr !important;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 16px;
+  }
+
+  .dp-home .dp-area-card {
+    width: 100%;
+    height: 230px;
+    min-height: 230px;
+    padding: 1.4rem;
+    box-sizing: border-box;
+  }
+}
+
+/* PADRONIZAÇÃO DOS CARTÕES DAS ÁREAS */
+
+.dp-home .dp-area-card {
+  height: 250px;
+  min-height: 250px;
+  box-sizing: border-box;
+}
+
+/* AJUSTE DO CONTEÚDO DOS CARTÕES */
+
+.dp-home .dp-area-card {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  min-height: 250px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.dp-home .dp-area-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.dp-home .dp-area-card p {
+  margin-bottom: 0;
+}
+
+.dp-home .dp-area-card .dp-card-link {
+  margin-top: auto;
+  padding-top: 12px;
+  flex-shrink: 0;
+}
+
+/* PADRONIZAÇÃO INTERNA DOS CARTÕES */
+
+.dp-home .dp-area-card {
+  align-items: flex-start;
+}
+
+.dp-home .dp-area-number {
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  min-height: 42px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  margin-bottom: 1.2rem;
+}
+
+.dp-home .dp-area-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.dp-home .dp-area-card p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.dp-home .dp-area-card .dp-card-link {
+  margin-top: auto;
+  padding-top: 12px;
+}
 
 
 

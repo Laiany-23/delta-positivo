@@ -30,10 +30,12 @@ template: splash
 
   {/* Apresentação da plataforma */}
   <section
+    className="dp-intro-banner"
     style="display: flex; align-items: center; gap: 24px; padding: 22px 30px; margin: 35px 0; background: #eaf2fc; border-radius: 18px; flex-wrap: wrap;"
   >
 
     <div
+      className="dp-intro-icon"
       style="display: flex; align-items: center; justify-content: center; min-width: 150px; color: #1769AA; border-right: 2px solid #1769AA; padding-right: 24px;"
     >
       <svg
@@ -54,7 +56,7 @@ template: splash
       </svg>
     </div>
 
-    <div style="flex: 1; min-width: 220px;">
+    <div className="dp-intro-text" style="flex: 1; min-width: 220px;">
       <h2 style="margin: 0 0 6px; color: #10243D; font-family: inherit; font-size: 1.65rem; font-weight: 800; letter-spacing: -0.02em;">
         Conheça o Delta Positivo
       </h2>
@@ -68,7 +70,7 @@ template: splash
 
     <a
       href="#sobre"
-      className="dp-button dp-button-primary"
+      className="dp-button dp-button-primary dp-intro-button"
       style="white-space: nowrap; padding: 13px 25px;"
     >
       Saiba mais →
@@ -85,11 +87,13 @@ template: splash
     </div>
 
     <div
+      className="dp-steps-grid"
       style="display: grid; grid-template-columns: minmax(0, 1fr) 24px minmax(0, 1fr) 24px minmax(0, 1fr); align-items: start; gap: 14px;"
     >
 
       {/* Etapa 1 */}
       <div
+        className="dp-step-card"
         style="position: relative; height: 220px; min-height: 220px; margin: 0; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px 14px; background: #FFFFFF; border: 1.5px solid #1769AA; border-radius: 14px; text-align: center;"
       >
         <span style="position: absolute; top: 14px; left: 16px; display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; background: #1769AA; color: white; font-weight: bold;">
@@ -114,12 +118,16 @@ template: splash
         </p>
       </div>
 
-      <div style="display: flex; align-items: center; justify-content: center; align-self: center; color: #1769AA; font-size: 30px; font-weight: 600;">
+      <div
+        className="dp-step-arrow"
+        style="display: flex; align-items: center; justify-content: center; align-self: center; color: #1769AA; font-size: 30px; font-weight: 600;"
+      >
         →
       </div>
 
       {/* Etapa 2 */}
       <div
+        className="dp-step-card"
         style="position: relative; height: 220px; min-height: 220px; margin: 0; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px 14px; background: #FFFFFF; border: 1.5px solid #1769AA; border-radius: 14px; text-align: center;"
       >
         <span style="position: absolute; top: 14px; left: 16px; display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; background: #1769AA; color: white; font-weight: bold;">
@@ -146,12 +154,16 @@ template: splash
         </p>
       </div>
 
-      <div style="display: flex; align-items: center; justify-content: center; align-self: center; color: #1769AA; font-size: 30px; font-weight: 600;">
+      <div
+        className="dp-step-arrow"
+        style="display: flex; align-items: center; justify-content: center; align-self: center; color: #1769AA; font-size: 30px; font-weight: 600;"
+      >
         →
       </div>
 
       {/* Etapa 3 */}
       <div
+        className="dp-step-card"
         style="position: relative; height: 220px; min-height: 220px; margin: 0; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px 14px; background: #FFFFFF; border: 1.5px solid #1769AA; border-radius: 14px; text-align: center;"
       >
         <span style="position: absolute; top: 14px; left: 16px; display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; background: #1769AA; color: white; font-weight: bold;">
@@ -250,6 +262,7 @@ template: splash
   </section>
 
 </main>
+
 
 
 
